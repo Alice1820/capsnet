@@ -108,7 +108,7 @@ def train(model, data, args):
     return model
 
 def test(model, data, args):
-        x_test, y_test = data
+    x_test, y_test = data
     y_pred, x_recon = model.predict(x_test, batch_size=100)
     print('-'*30 + 'Begin: test' + '-'*30)
     print('Test acc:', np.sum(np.argmax(y_pred, 1) == np.argmax(y_test, 1))/y_test.shape[0])
@@ -170,7 +170,7 @@ if __name__=='__main__':
     print(args)
 
     if not os.path.exists(args.save_dir):
-    os.makedirs(args.save_dir)
+        os.makedirs(args.save_dir)
 
     # load data
     (x_train, y_train), (x_test, y_test) = load_mnist()
