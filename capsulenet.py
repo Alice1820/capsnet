@@ -19,6 +19,7 @@ def margin_loss(y_true, y_pred):
 
 def CapsNet(intput_shape, n_class, num_routing):
     """
+    github try take 1
     :params input_shape [None, width, height, channels]
     :params n_class
     :params num_routing number of routing iterations
